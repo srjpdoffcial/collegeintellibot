@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                    <meta name="google-signin-scope" content="profile email">
+                        <script src="https://apis.google.com/js/platform.js" async defer></script>
+                        <meta name="google-signin-client_id" content="207559650810-ruelnv31bnou315oe5908berpu0o490i.apps.googleusercontent.com">
+                            <link rel="stylesheet" href="style.css">
+                                <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+                                    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+
+                                    </head>
+    
+    <body onload='signOut()'>
+        <!--navbar-->
+        <nav class="navbar navbar-inverse navbar-fixed-top ">
+            <div class="navbar-header">
+                <a href="#"><img src="chatbot.png" width="13%" style="border-radius: 70% ;
+                    margin-left: 3%; margin-top: 3px; class="img-fluid">
+                    </a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    </div>
+                    <div class="container-fluid collapse navbar-collapse" id="myNavbar">
+                    
+                    <ul class="nav navbar-nav">
+                    <li><a href="#abt">About</a></li>
+                    <li><a href="#stu">Student</a></li>
+                    <li><a href="#par">Parent</a></li>
+                    <li><a href="#adm">Admin</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right" style="padding-right: 2%;">
+                    
+                    <!-- google sign in button -->
+                    <li><a class="g-signin2" data-onsuccess="onSignIn" style = "height: 25%;"></a> </li>
+                    
+                    <li><a href="#" onclick="signOut();" id="cont1"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+                    
+                    </ul>
+                    </div>
+                    </nav>
+                    <div class="home-box">
+                    <img src="logo.png" width="48%"><br>
+                    <img src="chatbot.png" width="5%" style="border-radius: 50%;">
+                    <b>Lets make student life Easier ...!</b> <br>
+                    <div id="cont2" style="text-align:center;">
+                    <a href="dashboard.html"><img src="start-chat.png" class = "zoomImg"/> </a>
+                    </div>
+                    </div>
+                    
+                    <div id="abt"></div>
+                    <div class="container-fluid" style="width: 100%;
+                    line-height: 17px;
+                    height: 20%; margin-top:5%">
+                    
+                    <div class="row about-box" >
+                    <div class="col-md-6 col-lg-6" style="text-align: center;">
+                    <img src="about-logo.png" width="60%"><br>
+                    <img src="about.png" width="30%">
+                    </div>
+                    <div class="col-md-6 col-lg-6" style="">
+                    <p> College Intellibot project is built using artificial algorithms that analyzes user’s queries and understand user’s message.</p>
+                    <p> This System is a web application which provides answer to the query of the student.</p><p> Students just have to query through the bot which is used for chatting.</p>
+                    <p>College Info Intellibot is very useful for students,faculties as well as Parents since : </p>
+                    <ul>
+                    <li><p>They does not have to go personally to college office for the enquiry.  </p> </li>
+                    <li><p>This web-application enables the students to be updated with college cultural activities. </p></li>
+                    <li><p>This web-application saves time for the student as well as teaching and non-teaching staffs.</p></li>
+                    </ul>
+                    
+                    </div>
+                    </div>
+                    </div>
+                    <!--Student-->
+                    <div id="stu" style= "height: 5px;"></div>
+                    <div class="container-fluid">
+                    <div class="row about-box" style="">
+                    <div class="col-md-6 col-lg-6" style="padding-top: 6%; text-align: center;"><img src="student-logo.png" width="40%"><br>
+                    <img src="student.png" width="50%"><br>
+                    </div>
+                    <div class="col-md-6 col-lg-6" style="">
+                    <p>The vision of college intellibot is to make students life easier.</p>
+                    <p>College Intellibot answers all the queries of the student in the simplest way.</p>
+                    <p>The functionalities provided by the college intellibot will help the students to search about - </p>
+                    <ul>
+                    <li><p><b>College Events:</b>They could get the information about all the college events from here.  </p> </li>
+                    <li><p><b>Study Materials:</b>College Intellibot helps student to get best study material present for any subject and topic they want. </p></li>
+                    <li><p><b>Syllabus:</b>Students could check old as well as latest syllabus of subjects from here.</p></li>
+                    <li><p><b>Datesheet:</b>It also provides datesheets for exams and holidays.</p></li>
+                    <li><p><b>Results:</b>You can check your semester results directly from here.</p></li>
+                    <li><p><b>Placements:</b>Students could get information about upcoming drives.</p></li>
+                    <li><p><b>Important Contacts:</b>Students could get all important contacts of college from here and also could contact them directly from the bot.</p></li>
+                    </ul>
+                    
+                    </div>
+                    
+                    </div>
+                    </div>
+                    <!--Parent-->
+                    <div id="par"></div>
+                    <div class="container-fluid">
+                    <div class="row about-box" style="">
+                    <div class="col-md-6 col-lg-6" style="padding-top: 2%; text-align: center;"><img src="parent-logo.jpg" width="70%"><br>
+                    <img src="parent.png" width="50%"><br>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                    <p>College Intellibot is not only helpful for the students but also for Parents.</p>
+                    <p> They can easily get the informations without actually going to college.</p>
+                    <p>College Intellibot provides feature to pay fees directly from  the app and also contains the fee structure of all years and branches. </p>
+                    <p>They does not have to go personally to college office for the enquiry.  </p>
+                    <p>Parents could also check the result of their child from here. </p>
+                    </div>
+                    </div>
+                    </div>
+                    <!--Admin-->
+                    <div id="adm"></div>
+                    <div class="container-fluid">
+                    <div class="row about-box" >
+                    
+                    <div class="col-md-6 col-lg-6" style="text-align: center;"><img src="admin-logo.jpg" width="67%"><br>
+                    <img src="admin.png" width="50%"><br>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                    <p> Admin is the person who will help you whenever you are in trouble</p>
+                    <p> Admin is available 24*7 to help user.</p>
+                    <p>User could easily contact admin just by typing 'admin' and admin will be available to you in no time. </p>
+                    <p>This feature of live chat with admin makes this application so impressive and user friendly.</p>
+                    <p>Admin updates all the data of the college Intellibot.</p>
+                    <p>User could ask admin to add new functionalities, report bugs, suggest improvements etc.</p>
+                    </div>
+                    </div>
+                    </div>
+                    <!--footer-->
+                    <nav class="navbar navbar-inverse" style="margin:auto; ">
+                    
+                    <h5 style="text-align: center; color: white;">Copyright &copy; 2019 SurajPrasad & DeepshikhaGarg</h5>
+                    </nav>
+                    <script>
+                    function onSignIn(googleUser) {
+                    // Useful data for your client-side scripts:
+                    var profile = googleUser.getBasicProfile();
+                    console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+                    console.log('Full Name: ' + profile.getName());
+                    console.log("Email: " + profile.getEmail());
+                    showBoth()
+                    }
+                    </script>
+                    
+                    <script>
+                    function signOut() {
+                    var auth2 = gapi.auth2.getAuthInstance();
+                    auth2.signOut().then(function () {
+                    console.log('User signed out.');
+                    });
+                    hideBoth()
+                    }
+                    </script>
+                    
+                    <script>
+                    function hideBoth()
+                    {
+                    document.getElementById("cont1").style.display="none";
+                    document.getElementById("cont2").style.display="none" ;
+                    }
+                    </script>
+                    <script>
+                    function showBoth()
+                    {
+                    document.getElementById("cont1").style.display="block";
+                    document.getElementById("cont2").style.display="block";
+                    }
+                    
+                    </script>
+                    </body>
+                    </html>
